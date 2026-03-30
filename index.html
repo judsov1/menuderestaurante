@@ -1,1 +1,206 @@
+<!DOCTYPE html>
 
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#564338",
+              "surface-dim": "#e1d9cb",
+              "primary-container": "#c45100",
+              "surface-container-low": "#fbf3e4",
+              "secondary-fixed": "#e4e2e1",
+              "on-error": "#ffffff",
+              "outline": "#8a7266",
+              "on-primary": "#ffffff",
+              "surface-tint": "#a04100",
+              "on-primary-fixed": "#351000",
+              "on-primary-fixed-variant": "#7a3000",
+              "on-secondary-fixed-variant": "#474747",
+              "surface-container": "#f5edde",
+              "tertiary-fixed": "#ffdbc9",
+              "surface-bright": "#fff8ef",
+              "on-tertiary-fixed-variant": "#753401",
+              "tertiary": "#904917",
+              "secondary-fixed-dim": "#c8c6c6",
+              "surface-variant": "#e9e2d3",
+              "tertiary-fixed-dim": "#ffb68c",
+              "on-error-container": "#93000a",
+              "on-surface": "#1e1b13",
+              "surface": "#fff8ef",
+              "secondary": "#5f5e5e",
+              "on-background": "#1e1b13",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed": "#1b1c1c",
+              "primary": "#9c3f00",
+              "on-tertiary-container": "#fffbff",
+              "primary-fixed-dim": "#ffb693",
+              "inverse-surface": "#343026",
+              "background": "#fff8ef",
+              "tertiary-container": "#ae602d",
+              "error": "#ba1a1a",
+              "on-primary-container": "#fffbff",
+              "error-container": "#ffdad6",
+              "inverse-primary": "#ffb693",
+              "on-secondary-container": "#656464",
+              "on-secondary": "#ffffff",
+              "secondary-container": "#e4e2e1",
+              "on-tertiary-fixed": "#321200",
+              "on-tertiary": "#ffffff",
+              "outline-variant": "#ddc1b3",
+              "surface-container-highest": "#e9e2d3",
+              "surface-container-high": "#efe7d9",
+              "inverse-on-surface": "#f8f0e1",
+              "primary-fixed": "#ffdbcc"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #fff8ef;
+            color: #1e1b13;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="w-full sticky top-0 z-50 bg-[#fff8ef] dark:bg-stone-950 flex items-center justify-between px-6 py-4 shadow-none">
+<div class="flex items-center gap-3 active:scale-95 duration-200 transition-opacity hover:opacity-80">
+<span class="material-symbols-outlined text-[#9c3f00] dark:text-orange-500">menu</span>
+</div>
+<h1 class="text-[#1e1b13] dark:text-[#fff8ef] font-['Noto_Serif'] italic text-2xl tracking-tight">Digital Sommelier</h1>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center overflow-hidden border border-outline-variant/15 active:scale-95 duration-200 transition-opacity hover:opacity-80">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="Close-up portrait of a professional chef smiling in a brightly lit kitchen environment, soft focus background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrLOsmxuSOl6qqFNyj6Ytvsw3V5XmzaqTOCpcNoyyNH4SUimO5ZpCZev8Tie7UQxuAcaQnzmjQi-aVv-w1ICITu0zZvd0jsincEG_yXDVlKrSswMWxAr98PdEeOJTJc58OAhFZjcmzaUzLwWpNIN4WxD2vmawQqHZ790TT_jfDprPOMY52rCiQJ_78CJIPaiYDAJTx14SXTDGSCDnNs4Pm5eUnc3BjDfB1bmt26xCAocY0__kev0u_NmLlRL6d9RMHCe4vyzzlfDY"/>
+</div>
+</header>
+<main class="flex flex-col gap-10">
+<!-- Hero Section -->
+<section class="relative px-6 pt-4">
+<div class="relative w-full aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl">
+<img alt="Signature Dish" class="w-full h-full object-cover scale-105" data-alt="Exquisite plating of grilled seabass with vibrant seasonal vegetables and herb-infused oil, dramatic side lighting on dark rustic wood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWeZEbpe0RrONNuF0QWTsL_CsHBOtkdf1_uO7ZgOGj6rQkVcuKTuEInzgund7dtAaCz3V0O5E02KhJe8NyIXNaBd6uefPgXsSUNt5ZLiinrOaw9MGazYY_-eX0D-MhrzwJG6YGpMNjU3VSLgifpgz2H96raqEvkyEV07_NNbv2uUAieTdqMIk3cio5nrbMn50rW-qOQt4P-asAtbVKCJiaOOXLESB0ERNedV1GkkfV5bhGNsvD9jrUuUr9xPoRupaDVjJLGV3G8QU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-10 left-8 right-8">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-white/70 mb-2 block">Destaque do Chef</span>
+<h2 class="font-headline text-4xl text-white font-bold leading-tight mb-4">A Essência da Gastronomia em cada detalhe.</h2>
+<button class="bg-primary text-on-primary rounded-full px-8 py-4 font-label font-bold text-sm tracking-wider uppercase flex items-center gap-2 active:scale-95 transition-all shadow-lg">
+                        Ver Cardápio
+                        <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Categories / Chips -->
+<section class="px-6">
+<h3 class="font-headline text-xl mb-6">Explore por Categoria</h3>
+<div class="flex gap-3 overflow-x-auto pb-4 no-scrollbar">
+<div class="bg-surface-container-highest text-on-surface-variant rounded-full px-6 py-3 whitespace-nowrap font-label text-sm flex items-center gap-2 shrink-0 transition-colors hover:bg-primary/10">
+<span class="material-symbols-outlined text-lg">wine_bar</span> Entradas
+                </div>
+<div class="bg-primary text-on-primary rounded-full px-6 py-3 whitespace-nowrap font-label text-sm flex items-center gap-2 shrink-0 shadow-md">
+<span class="material-symbols-outlined text-lg">restaurant</span> Pratos Principais
+                </div>
+<div class="bg-surface-container-highest text-on-surface-variant rounded-full px-6 py-3 whitespace-nowrap font-label text-sm flex items-center gap-2 shrink-0 transition-colors hover:bg-primary/10">
+<span class="material-symbols-outlined text-lg">icecream</span> Sobremesas
+                </div>
+<div class="bg-surface-container-highest text-on-surface-variant rounded-full px-6 py-3 whitespace-nowrap font-label text-sm flex items-center gap-2 shrink-0 transition-colors hover:bg-primary/10">
+<span class="material-symbols-outlined text-lg">local_bar</span> Drinks
+                </div>
+</div>
+</section>
+<!-- Editorial Grid / Recommendations -->
+<section class="px-6 mb-12">
+<div class="flex items-end justify-between mb-8">
+<div>
+<h3 class="font-headline text-3xl font-bold tracking-tight">Favoritos da Casa</h3>
+<p class="font-body text-on-surface-variant mt-1">Curadoria exclusiva para paladares exigentes.</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<!-- Bento Card 1 -->
+<div class="col-span-2 bg-surface-container-low rounded-[2rem] p-6 flex flex-col gap-4 overflow-hidden relative group">
+<div class="relative z-10 w-2/3">
+<span class="font-label text-[10px] text-primary font-bold uppercase tracking-widest bg-primary/10 px-3 py-1 rounded-full">Sazonal</span>
+<h4 class="font-headline text-2xl font-bold mt-3 mb-2">Risoto de Açafrão com Lagostim</h4>
+<p class="font-body text-sm text-on-surface-variant line-clamp-2">Arroz arbóreo premium, açafrão iraniano e lagostins frescos grelhados na manteiga de ervas.</p>
+<p class="font-label font-bold text-primary mt-4">R$ 124,00</p>
+</div>
+<div class="absolute -right-10 -bottom-10 w-48 h-48 rounded-full overflow-hidden rotate-12 group-hover:scale-110 transition-transform duration-500">
+<img alt="Risotto" class="w-full h-full object-cover" data-alt="Close up of golden saffron risotto served in a white ceramic bowl with fresh herbs and grilled crayfish tail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_kRFE6AoifHMbBGhigInlcFS-x5SN3WyF9BH9tWYAjoYxtKnNjPH9S7ouy4d-MX3vEzCRbuwM4smaRn3mYib9ATyPq-ZSAA2hlHlJyQLluNZDMtT3FP0-BxMakoeSYSvlsL5QwZGgHAF5V0NTDL9pHYIo4tYnoDt2bCTshKDYrv7eC2qfQjSeBsX1LklnG_mGVIKY4EkTSPVIlg4gWiR1lHQtJy5P-MeXS8WyjBeBiVW-hcQcgBAAVxm2bDwGkTb_3-AyoOa_lyk"/>
+</div>
+</div>
+<!-- Bento Card 2 -->
+<div class="col-span-1 bg-surface-container-lowest rounded-[2rem] p-5 flex flex-col shadow-sm border border-outline-variant/10">
+<div class="w-full aspect-square rounded-2xl overflow-hidden mb-4">
+<img alt="Steak" class="w-full h-full object-cover" data-alt="Slices of rare cooked wagyu beef steak on a dark stone plate with sea salt crystals and rosemary" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3SKxtduMPO9SpyBE8OIQPBLDZjnmc6oRHFwxipIyZv76dmC9CRaYsN2_GCe6jq3JKUXB116qdQBC5aHbtmw2jaTEopbFofPe0Bb91DymWY92HaSk_hIfvtOYelkmq8Pn-vQnxImjBcuXH-5vfZn5zmchAnp2AGc4GxbVNvA0-1I0nRa-ELoC4Hq07brfF64hiTzKlcH140DKoYXSXfbFcH_aaS3hrl9GWTN8dPBHAnpKPEhf9cMp6ITQADyq0BxYXeEu8N2f3KTI"/>
+</div>
+<h4 class="font-headline text-lg font-bold">Wagyu A5</h4>
+<p class="font-label text-xs text-primary mt-auto">R$ 280,00</p>
+</div>
+<!-- Bento Card 3 -->
+<div class="col-span-1 bg-surface-container-lowest rounded-[2rem] p-5 flex flex-col shadow-sm border border-outline-variant/10">
+<div class="w-full aspect-square rounded-2xl overflow-hidden mb-4">
+<img alt="Dessert" class="w-full h-full object-cover" data-alt="Decadent chocolate lava cake with a melting center served with a scoop of vanilla bean gelato" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4JkJk2EcfOUIaSk58c1A_Ik15ddQUkcg8UmpvhDHc98gjRBVuQj7gFJtgLba0Lr3OyMpQJkD1OvDO-aWfmeDK4oUt1Y0It7sayQ3Qno39_OMIl3jBbqAfttmxdB1iilgFgzt00nVPUthuQBIj--6IV2JRUYS7m6ajPKsEl_eo7fvQFNcevpsE4SAfBPBw8q2FwpkPvr8Yrw-5y_fBDxms0bFqiPODbiCnK1CVyP3g0t8o8-uSRbKiN0-O9B_nwz9gmxj-Ou56JTU"/>
+</div>
+<h4 class="font-headline text-lg font-bold">Petit Gâteau Noir</h4>
+<p class="font-label text-xs text-primary mt-auto">R$ 42,00</p>
+</div>
+</div>
+</section>
+<!-- Newsletter / Invitation -->
+<section class="px-6 mb-16">
+<div class="bg-primary-container rounded-[2.5rem] p-10 text-center text-white relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl"></div>
+<h3 class="font-headline text-2xl font-bold mb-4">Uma experiência única.</h3>
+<p class="font-body text-white/80 mb-8 text-sm leading-relaxed">Assine nossa newsletter e receba convites para eventos exclusivos de degustação e novos menus sazonais.</p>
+<div class="flex flex-col gap-3">
+<input class="bg-white/10 border-none rounded-full px-6 py-4 text-white placeholder:text-white/50 text-sm focus:ring-2 focus:ring-white/30 transition-all" placeholder="Seu melhor e-mail" type="email"/>
+<button class="bg-white text-primary font-label font-bold py-4 rounded-full text-sm uppercase tracking-widest shadow-xl">Inscrever-se</button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-[2rem] bg-[#fff8ef]/80 dark:bg-stone-950/80 backdrop-blur-md flex justify-around items-center px-4 py-3 pb-8 shadow-[0_-4px_24px_rgba(30,27,19,0.06)] border-t border-[#ddc1b3]/15">
+<div class="flex flex-col items-center justify-center bg-[#9c3f00] text-white rounded-full px-5 py-2 scale-110 transition-all active:translate-y-1 duration-300">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[11px] uppercase tracking-widest mt-1">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#1e1b13] dark:text-stone-400 opacity-60 hover:text-[#9c3f00] transition-colors active:translate-y-1 duration-300">
+<span class="material-symbols-outlined">restaurant_menu</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[11px] uppercase tracking-widest mt-1">Menu</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#1e1b13] dark:text-stone-400 opacity-60 hover:text-[#9c3f00] transition-colors active:translate-y-1 duration-300">
+<span class="material-symbols-outlined">style</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[11px] uppercase tracking-widest mt-1">Contact</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#1e1b13] dark:text-stone-400 opacity-60 hover:text-[#9c3f00] transition-colors active:translate-y-1 duration-300">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[11px] uppercase tracking-widest mt-1">Profile</span>
+</div>
+</nav>
+</body></html>
